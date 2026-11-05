@@ -44,7 +44,7 @@ class ColaClientes:
 
         return self.frente.numero
 
-    # Mostrar todos los clientes
+    
     def mostrar(self):
         actual = self.frente
 
@@ -58,7 +58,7 @@ class ColaClientes:
 
 cola = ColaClientes()
 
-# Agregar cuatro clientes
+
 cola.encolar(1)
 cola.encolar(2)
 cola.encolar(3)
@@ -68,10 +68,10 @@ print("Contenido de la cola:")
 cola.mostrar()
 
 
-print("\nPróximo cliente a ser atendido:", cola.peek())
+print("Próximo cliente a ser atendido:", cola.peek())
 cliente_atendido = cola.desencolar()
-print("\nCliente atendido:", cliente_atendido)
+print("Cliente atendido:", cliente_atendido)
 
 
-print("\nContenido de la cola después de desencolar:")
+print("Contenido de la cola después de desencolar:")
 cola.mostrar()
